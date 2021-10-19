@@ -17,16 +17,49 @@ int main(int argc, char **argv){
 				elementos = atoi(optarg);
 				break;
 			default:
-				printf("Argumento inválido\n");
+				printf("Argumento invalido\n");
 				exit(1);
 		}
+	}
+	
+	if(p<=0){
+		printf("Numero de personas invalido\n");
+				exit(1);
+			}
+	}
+	
+	float peso[elementos];
+	float altura[elementos];
+	float imc[elementos];
+	for(int i=0; i<elementos; i++){
+	
+		prinf("Peso: ")
+		scanf("%.2f", &peso[i]);
+			if(peso[i]<0){
+			printf("Número invalido\n");
+				exit(1);
+			}
+			
+		prinf("Altura: ")
+		scanf("%.2f", &altura[i]);
+			if(altura[i]<0){
+			printf("Número invalido\n");
+				exit(1);
+			}
+			
+		imc[i]=peso/(altura*altura);
 	}
 
 	//Los resultados de sus calculos van en estas variables.
 	//Puede declarar más variables si lo necesita.
 	float sum = 0.0f;
-	float max_imc = 0.0f;
-	
+	float max_imc = imc[0];
+		for(int i=0; i<elementos; i++){
+		sum = sum + imc[i];
+		if(imc[i]>max_imc){
+			max_imc=imc[i];
+		}
+	}
 	
 	
 	
