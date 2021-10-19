@@ -23,10 +23,8 @@ int main(int argc, char **argv){
 	}
 	
 	if(elementos<=0){
-		printf("Numero de personas invalido\n");
-				exit(1);
-			}
-	
+	printf("Numero de personas invalido\n");
+	exit(1);}
 	
 	float peso[elementos];
 	float altura[elementos];
@@ -35,14 +33,14 @@ int main(int argc, char **argv){
 	for(i=0; i<elementos; i++){
 	
 		printf("Peso: ");
-		scanf("%.2f", &peso[i]);
+		scanf("%f", &peso[i]);
 			if(peso[i]<0){
 			printf("Número invalido\n");
 				exit(1);
 			}
 			
 		printf("Altura: ");
-		scanf("%.2f", &altura[i]);
+		scanf("%f", &altura[i]);
 			if(altura[i]<0){
 			printf("Número invalido\n");
 				exit(1);
