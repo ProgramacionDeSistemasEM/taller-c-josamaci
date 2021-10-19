@@ -35,14 +35,14 @@ int main(int argc, char **argv){
 		printf("Peso: ");
 		scanf("%f", &peso[i]);
 			if(peso[i]<0){
-			printf("Número invalido\n");
+			printf("Numero invalido\n");
 				exit(1);
 			}
 			
 		printf("Altura: ");
 		scanf("%f", &altura[i]);
 			if(altura[i]<0){
-			printf("Número invalido\n");
+			printf("Numero invalido\n");
 				exit(1);
 			}
 			
