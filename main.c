@@ -17,7 +17,7 @@ int main(int argc, char **argv){
 				elementos = atoi(optarg);
 				break;
 			default:
-				printf("Argumento invalido\n");
+				printf("Argumento inválido\n");
 				exit(1);
 		}
 	}
